@@ -1,72 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey's with Daisy UI</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Poppins:wght@400;500;700;800&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <title> Play Hockey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-clr': '#FF4240',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-<style>
-    
-.font-manrope{
-    font-family: 'Manrope', sans-serif;
-}
-        
-</style>
-    
+
+    </script>
 
 </head>
-<body>
-    <header>
-        <nav>
-        <section>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+
+<style>
+    .font-monrope {
+        font-family: 'Manrope', sans-serif;
+        ;
+    }
+
+    .image-1 {
+        background: url(Images/2.png);
+    }
+
+    .image-2 {
+        background: url(Images/3.png);
+    }
+
+    .image-3 {
+        background: url(Images/4.png);
+    }
+</style>
+
+<body class="font-monrope">
+
+  <header class="md:container md:mx-auto">
+
+    <!-- Navbar section start -->
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                  
-                  </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <div class="navbar-center gap-4">
-                  <a class=" text-ml text-red-500 ">Home</a>
-                  <a class=" text-ml">About</a>
-                  <a class=" text-ml">Pages</a>
-                  <a class=" text-ml">Blog</a>
-                  <a class=" text-ml">Contact</a>
-                </div>
-                <div class="navbar-end">
-                  <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>
-                  
-                    <div class="bg-red-500 rounded-md">
-                        <button class="text-white btn-btn primary">Get Ticket</button>
-                    </diV>
-                   
-                    </div>
-                  </button>
-                </div>
-              </div>
-        </section>
-        </nav>
-    </header>
+                <a class="sm:text-xl lg:text-4xl font-extrabold">Hockey <span class="text-[#FF4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#FF4240]"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <img class="sm:flex hidden lg:mx-6" src="Images/search-icon.png" alt="">
+                <a class="btn bg-btn-clr text-white px-6">Get Ticket</a>
+            </div>
+        </div>
+    </nav>
+  </header>
     <section>
         <diV class="mt-10 ml-16">
             <img src="Images/1.png" alt="">
